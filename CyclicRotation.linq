@@ -10,7 +10,7 @@ public int[] CyclicRotation(int[] numbers, int k)
 {
 	int[] copy = new int[numbers.Length];
 	for(int i = 0; i < numbers.Length; i++)
-	{
+	{ 
 		int shift = (k + i) % numbers.Length;
 		copy[shift] = numbers[i];
 	}
